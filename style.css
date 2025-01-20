@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* common style start*/
+:root{
+    --primary-color:#FEA301;
+    --secondary-color:#01ACFD;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+.d-flex{
+    display: flex;
+}
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+main{
+    max-height: 1440px;
+}
+.btn{
+    padding: 10px 60px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition:all 0.2s ease-in-out ;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 80%;
+}
+
+/* common style end*/
+
+/* navbar start*/
+.navber{
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+.navber .barnd{
+    align-items: center;
+    column-gap: 11px;
+}
+.navber .logo-icon{
+    width: 62px;
+    height: 62px;
+}
+.navber h3{
+    font-size: 2rem;
+}
+.link{
+    column-gap: 32px;
+}
+.navber ul li{
+    list-style: none;
+}
+.navber ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.link1{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.link2{
+    color: var(--secondary-color);
+}
+.link3{
+    color:#05D4DF ;
+}
+.link4{
+    color: #5D58EF;
+}
+.navber div button{
+    background-color: var(--primary-color);
+}
+.menubar-icon{
+    display: none;
+    width: 30px;
+}
+/* navbar end*/
+
+/* header section start */
+.banner{
+    align-items: center;
+    column-gap: 50px;
+}
+.banner-info h1{
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+}
+.banner-info p{
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+.sp-1{
+    color: var(--primary-color);
+}
+.sp-2{
+    color: var(--secondary-color);
+}
+.banner-info button{
+    padding: 10px 47px;
+    background-color: black;
+}
+.banner-info{
+    max-width: 640px;
+}
+.banner-img{
+    max-width: 468px;
+}
+.banner img{
+    width: 100%;
+}
+/* header section end */
+
+
+/*curriculum section start */
+.curriculum{
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.curriculum h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 60px ;
+    margin-bottom: 80px;
+}
+.curriculum-conteinar{
+    max-width: 1160px;
+    margin: 0 auto;
+    gap: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.curriculum-card{
+    max-width: 286px;
+    padding: 53px 40px;
+    border-radius: 18.86px;
+    text-align: center;
+    box-shadow: 0 0 28px 0.94px rgba(0, 0, 0, 0.123);
+}
+.curriculum-card a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.a1{
+    color: #64C8FF;
+}
+.a2{
+    color: #F0AA00;
+}
+.a3{
+    color: #8700FF;
+}
+.curriculum-card h3{
+    font-size: 1.5rem;
+    margin: 32px 0;
+}
+.curriculum-card p{
+    margin-bottom: 33px;
+    color: rgba(128, 128, 128, 1);
+}
+.card-1{
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 0%, white 40%);
+}
+.card-2{
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 0%, white 40%);
+}
+.card-3{
+    background: linear-gradient(to bottom, #e5d9f6 0%, white 40%);
+}
+.arro{
+    justify-content: center;
+    gap: 10px;
+}
+.arro .icon{
+    background-color: var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+}
+/*curriculum section end */
+
+
+/* footer section start */
+/* footer section end */
+
+
+@media (max-width:576px) {
+    .link, .navber h3, .navber button{
+        display: none;
+    }
+    .menubar-icon{
+        display: block;
+    }
+    .navber .logo-icon{
+        width: 45px;
+        height: 45px;
+    }
+    .navber{
+        border-bottom: 1px solid orange;
+        padding: 12px 16px;
+        margin: 0;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        column-gap: 0px;
+        text-align: center;
+        margin: 0 15px;
+    }
+    .banner-info h1{
+        font-size: 32px;
+    }
+    .banner-info p{
+        font-size: 14px;
+    }
+    .banner img{
+        width: 90%;
+    }
+    .curriculum{
+        margin: 0 15px;
+    }
+    .curriculum h1{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .arro{
+        display: none;
+    }
+}
+@media (min-width:576px) and (max-width:992px) {
+    .navber{
+        flex-direction: column;
+    }
+    header{
+        margin: 0 20px;
+    }
+    .banner-info h1{
+        font-size: 40px;
+    }
+    .banner-info{
+        width: 70%;
+    }
+    .curriculum{
+        margin: 0 4px;
+    }
+}
+
