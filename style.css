@@ -139,7 +139,7 @@ main{
     background-size: cover;
 }
 .curriculum h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: center;
     margin-top: 60px ;
     margin-bottom: 80px;
@@ -205,6 +205,87 @@ main{
 }
 /*curriculum section end */
 
+/* our stories section start */
+.our-stories{
+    background: url('./assets/bg.png'), url('./assets/bg.png'), linear-gradient(to top, rgba(254, 161, 1, 0.312) 0%, #eee 100%);
+    margin: 0 auto;
+}
+.our-stories h1{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+.stories-conteinar{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 19px;
+    justify-content: center;
+}
+.story-card{
+    border-radius: 16px;
+    background-color: white;
+    position: relative;
+}
+.story-card img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.story-card-1{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.card-info-1{
+    padding: 0px 38px 34px 38px;
+}
+.story-card-1 button{
+    background-color: #05D4DF;
+    padding: 15px 19px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    position: relative;
+    top: -30px;
+}
+.card-info-1 h4{
+    font-size: 1.5rem;
+    margin-bottom: 48px;
+    margin-top: 0px;
+}
+.card-info-1 p{
+    color: #666666;
+}
+.story-semilar-style{
+    padding: 0 38px 0px 37px ;
+}
+.story-semilar-style h4{
+    font-size: 1rem;
+    line-height: 28px;
+    margin-top: 0px;
+}
+.story-semilar-style button{
+    background-color: #95B226;
+    border: none;
+    padding: 10px 19px;
+    border-radius: 50px;
+    position: relative;
+    top: -20px;
+}
+.view-all-button{
+    text-align: center;
+}
+.view-all-button button{
+    background-color: black;
+    margin-bottom: 60px;
+    margin-top: 80px;
+}
+
+/* our stories section end */
 
 /* footer section start */
 /* footer section end */
@@ -252,6 +333,47 @@ main{
     .arro{
         display: none;
     }
+    .our-stories{
+        background-size: cover;
+    }
+    .stories-conteinar{
+        grid-template-columns:  repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin: 0 15px;
+        gap: 11px;
+    }
+    .story-card-1{
+        display: none;
+    }
+    .story-semilar-style{
+        padding: 0 38px 0px 37px ;
+    }
+    .story-semilar-style h4{
+        font-size: 9px;
+        line-height: 17px;
+        margin-bottom: 17px;
+        margin-top: 0px;
+    }
+    .story-semilar-style button{
+        padding: 7px 15px;
+        font-size: 0.5rem;
+    }
+    .story-semilar-style{
+        padding: 0 30px 0px 20px ;
+    }
+    .our-stories h1{
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+    .view-all-button button{
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .view-all-button button{
+        padding: 10px 37px;
+        border-radius: 12px;
+    }
 }
 @media (min-width:576px) and (max-width:992px) {
     .navber{
@@ -268,6 +390,12 @@ main{
     }
     .curriculum{
         margin: 0 4px;
+    }
+    .stories-conteinar{
+        grid-template-columns:  repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin: 0 15px;
+        gap: 11px;
     }
 }
 
