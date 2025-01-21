@@ -98,6 +98,10 @@ main{
 /* navbar end*/
 
 /* header section start */
+.marquee marquee{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
 .banner{
     align-items: center;
     column-gap: 50px;
@@ -203,6 +207,9 @@ main{
     margin-bottom: 60px;
 
 }
+.arro .icon:hover{
+    background-color: rgba(244, 165, 38, 0.792);
+}
 /*curriculum section end */
 
 /* our stories section start */
@@ -275,6 +282,7 @@ main{
     border-radius: 50px;
     position: relative;
     top: -20px;
+    color: white;
 }
 .view-all-button{
     text-align: center;
@@ -358,6 +366,11 @@ hr{
         border-bottom: 1px solid orange;
         padding: 12px 16px;
         margin: 0;
+    }
+    .marquee marquee{
+        font-size: 2.5rem;
+        margin-top: 30px;
+        font-weight: 800;
     }
     .banner{
         flex-direction: column-reverse;
@@ -446,6 +459,7 @@ hr{
     .colam-1 p{
         font-size: 16px;
     }
+    
 }
 @media (min-width:576px) and (max-width:992px) {
     .navber{
